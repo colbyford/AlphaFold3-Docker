@@ -51,7 +51,7 @@ WORKDIR /app/alphafold
 ## Copy repo contents into working directory
 COPY . .
 
-## Install PyTorch implementation of Alphafold3
+## Install PyTorch implementation of Alphafold3 (from: https://github.com/kyegomez/AlphaFold3)
 RUN pip install alphafold3
 
 ## Install pip packages.

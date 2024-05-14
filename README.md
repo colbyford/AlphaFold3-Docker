@@ -3,8 +3,7 @@ Docker image for AlphaFold3 from Google Deepmind and Isomorphic Labs (using an o
 
 <h3 align="right">Colby T. Ford, Ph.D.</h3>
 
-#### Work in progress...
-
+#### Work in progress... (Not ready for use yet)
 
 ## Build Docker Container
 ```bash

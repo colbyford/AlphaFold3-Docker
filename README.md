@@ -25,6 +25,6 @@ This repo includes two Dockerfiles:
 
 These images includes models/implementations from:
 - KyeGomez: https://github.com/kyegomez/AlphaFold3/
-    - Command: `from alphafold3 import ...`
+    - Python Command: `from alphafold3 import ...`
 <!-- - LucidRains: https://github.com/lucidrains/alphafold3-pytorch
     - Command: `import alphafold3_pytorch` -->

@@ -42,14 +42,12 @@ WORKDIR /app/alphafold
 ## Hack: Avoid undefined_symbol error.
 RUN ln -sf /usr/lib/x86_64-linux-gnu/libffi.so.7 /opt/conda/lib/libffi.so.7
 
-## Get the repo content from GitHub (and install requirements)
+## Clone and install the KyeGomez package + requirements
 RUN git clone https://github.com/kyegomez/AlphaFold3 . \
     && git checkout main \
     && python -m pip install -r requirements.txt \
-    && pip install git+https://github.com/aqlaboratory/openfold
-
-## Install the package
-RUN python -m pip install .
+    && python -m pip install git+https://github.com/aqlaboratory/openfold \
+    && python -m pip install .
 
 ## Add SETUID bit to the ldconfig binary so that non-root users can run it.
 RUN chmod u+s /sbin/ldconfig.real

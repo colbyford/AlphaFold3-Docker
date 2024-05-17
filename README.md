@@ -12,7 +12,7 @@ docker build -t af3 .
 ## Run Container
 ```bash
 ## With GPUs
-docker run  --gpus all -it af3 python
+docker run  --gpus all -it af3
 ```
 
 ## Notes
